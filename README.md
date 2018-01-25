@@ -3,7 +3,7 @@
 stpvers
 =======
 
-Laden der Experimentelle Funktionen von Statistik-Peter
+Die stpvers ist eine Kopie von tidyverse und ladet die library stpAPA2, stpOutput, stpAggregate und stpData.
 
 Overview
 --------

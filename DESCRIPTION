@@ -1,11 +1,10 @@
 Package: stpvers
 Type: Package
 Title: Laden der Funktionen von Statistik-Peter
-Version: 0.1.0
+Version: 0.2.0
 Author: Wolfgang
-Maintainer: Wolfgang Peter <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Maintainer: Wolfgang Peter <w.peter@statistik-peter.at>
+Description: Die stpvers ist eine Kopie von tidyverse und ladet die library stpAPA2, stpOutput, stpAggregate und stpData.
 License: GPL-3
 Encoding: UTF-8
 Imports: Hmisc
