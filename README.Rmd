@@ -17,6 +17,7 @@ library(stringr)
 
  
 Die stpvers ist eine Kopie von tidyverse  und ladet die library stpAPA2, stpOutput, stpAggregate und stpData.
+test am neuen PC
 
 Overview
 --------
