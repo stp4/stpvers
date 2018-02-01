@@ -7,6 +7,12 @@
  # tidyverse_conflicts()
 }
 
+
+
+#' @rdname is_irgendwas
+#' @export
+#' @examples
+#' is_attached("stpvers")
 is_attached <- function(x) {
   paste0("package:", x) %in% search()
 }

@@ -4,7 +4,6 @@
 #' @description Prueft ob objekt bestimmte Eigenschaften aufweist.
 #' Fuer Dataframe gibt es \code{is_all_identical2()}
 #' @param x zu pruefendes Objekt
-#' @param data Daten wenn Formeln geprüft werden
 #' @return Die \code{is_all_} gibt generel einen Wert zurueck die \code{is_} einen Vector in gleicher Laenge wie der Input-Vector.
 #' @examples
 #' # isFALSE(TRUE)
@@ -21,13 +20,14 @@ NULL
 
 #' @rdname is_irgendwas
 #' @export
+#' @description  is_formula2 Prueft ob es eine Formel ist
 #' @examples
 #' is_formula2(a~b+v)
 is_formula2<- function (x)
   inherits(x, "formula")
 
 #' @rdname is_irgendwas
-#' @description is empty wird in prepare_data genutzt als test ob ein Elemen  leer ist
+#' @description is_empty2 wird in prepare_data genutzt als test ob ein Elemen  leer ist
 #' @export
 #' @examples
 #'  is_empty2(c("freq", "mean"))
@@ -52,13 +52,7 @@ is_empty2 <- function (x) {
 
 
 
-#' @rdname is_irgendwas
-#' @export
-is_false2<- function(x) sapply(x, isFALSE)
 
-#' @rdname is_irgendwas
-#' @export
-is_all_identical2 <- function(x) all_identical2(x)
 
 #' @rdname is_irgendwas
 #' @export
@@ -71,6 +65,7 @@ is_all_dichotom<- function(x){
 
 
 #' @rdname is_irgendwas
+#' @description is_all_logical is_all_0_1 prufen beide Logical aber is_all_dichotom  kann auch ja/nein
 #' @export
 is_all_logical <- function(x){
   if (length(x)<=0) FALSE  #-- fuer Melt2
@@ -101,24 +96,33 @@ is_all_0_1 <- function(x)  {
   else     FALSE # class(x)
 }
 
-#-- Interne Funktion
+ 
 #' @rdname is_irgendwas
+#' @description isFALSE analog wie if(x){...}
 #' @export
 isFALSE <- function(x){identical(FALSE, x )}
 
-#-- in Recast2 verwendet
+
 #' @rdname is_irgendwas
+#' @description is_false2 arbeitet mit isFALSE geht aber auch fuer Matris oder Data.frames
 #' @export
-all_identical2 <- function(data) {
-  if (ncol(data) < 2) {
+is_false2<- function(x) sapply(x, isFALSE)
+
+
+ 
+#' @rdname is_irgendwas
+#' @description is_all_identical2 oder all_identical2 wird in Recast2 verwendet
+#' @export
+all_identical2 <- function(x) {
+  if (ncol(x) < 2) {
     TRUE
   }
   else{
     xs <-
-      sapply(data, function(x)
-        if (is.numeric(x))
+      sapply(x, function(xx)
+        if (is.numeric(xx))
           "numeric"
-        else if (is.factor(x))
+        else if (is.factor(xx))
           "factor"
         else
           NA)
@@ -133,6 +137,15 @@ all_identical2 <- function(data) {
 }
 
 #' @rdname is_irgendwas
+#' @export
+is_all_identical2 <- function(x) all_identical2(x)
+
+
+
+
+#' @rdname is_irgendwas
+#' @param data Daten wenn Formeln gepruft werden
+#' @description is_vars_in_data Prueft ob ded data.frame auch die Fariablen enthaelt.
 #' @export
 is_vars_in_data<- function(x, data=NULL){
 

@@ -1,0 +1,42 @@
+---
+author:
+- DI Wolfgang Peter
+- Statistik-Peter
+opening: Sehr geehrter Herr Muster,
+closing: Mit Freundlichen Grüßen,
+date: 26 Jänner 2018
+address:
+- Hans Muster
+- Wasserweg 18/b
+- 6020 Innsbruck
+return-address: 
+- Statistik-PETER
+- DI Wolfgang Peter
+- Innsbrucker Straße 14
+- 6176 Völs/Austria
+ps: AGB -Die statistische Auswertung und Beratung wird von DI Wolfgang Peter nach bestem Wissen und Gewissen durchgeführt. Eine Erfolgsgarantie besteht nicht.	-Es gelten die DFG-Empfehlungen zur Sicherung guter wissenschaftlicher Praxis. Ich betreibe kein Ghostwriting.		-Die Betreung kann jederzeit von einer der beiden Seiten beendet werden. In diesem Fall sind vom Kunden nur die geleisteten Stunden zu entgelten. 				-Jegliche Inhalte wissenschaftlicher Arbeiten werden vertraulich behandelt und Dritten nicht zugänglich gemacht.			-Das Honorar für die Auswertung berechnet sich aus der tatsächlich erbrachten Leistungen zum vereinbarten Stundensatz. Zwischenrechnungen werden erstellt, wenn ein Betrag von 350 Euro überschritten wird.				-Für diese Geschäftsbeziehungen und die gesamten Rechtsbeziehungen der Vertragspartner gilt das Recht der Bundesrepublik Österreich. Ausschließlicher Gerichtsstand für alle, sich aus dem Vertragsverhältnis unmittelbar oder mittelbar ergebenden Streitigkeiten ist Innsbruck.
+fontfamily: mathpazo
+fontsize: 11pt
+geometry: margin=1in
+blockquote: true
+output: linl::linl
+---
+
+
+**Aufwandseinschätzung im Rahmen einer wissenschaftlichen Arbeit**
+ 
+Vielen Dank für Ihre Anfrage. Ich unterbreite Ihnen hiermit folgendes Angebot. 
+Position | Arbeitsstunden
+---------|----------------
+Einarbeiten ins Thema| 1
+Aufbereitung der Rohdaten | 3 bis 4
+Operationalisierung | 4 bis 5
+Auswertung der Daten| 3 bis 4
+Berichterstellung | 5 
+
+Geschätzter Aufwand ca. 16 bis 19 Stunden. Die Abrechnung erfolgt auf geleistete Arbeitsstunden, der Stundensatz beträgt 125,- Euro. 
+Wir hoffen, dass Ihnen unser Angebot zusagt und würden uns über Ihren Auftrag sehr freuen. 
+
+
+> Es wird keine Umsatzsteuer ausgewiesen, da die Umsätze gemäß § 6 Abs. 1 Z 27 UStG unecht USt.-befreit sind.
+
