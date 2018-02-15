@@ -16,6 +16,8 @@ Output ist ein Vector bzq dataframe mit gleicgher Laenge wie der Input.
 \description{
 Prueft ob objekt bestimmte Eigenschaften aufweist.
 Fuer Dataframe gibt es \code{is_all_identical2()}
+
+as_numeric Kopie von Hmisc all.is.numeric kann aber auch Data.Frames verarbeiten
 }
 \examples{
 data<- data.frame(a=1:10,

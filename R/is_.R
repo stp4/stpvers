@@ -158,3 +158,4 @@ is_vars_in_data<- function(x, data=NULL){
   if(length(x)>0) return(all(is.element(x, names(data))))
   else return(TRUE)
 }
+
