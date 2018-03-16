@@ -1,7 +1,7 @@
 #' Neues Projekt erstellen
 #'
-#' @description  Erstellt ein neues Projekt mir Ordnerstrucktur
-#'  und R-Auswertungs-Files.
+#' @description  Erstellt ein neues Projekt mit der Ordnerstrucktur
+#'  und den R-Auswertungs-Files.
 #' @param project Name des projektes
 #' @param datum Datum
 #' @param comment Beschreibung
