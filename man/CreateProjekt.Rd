@@ -17,8 +17,8 @@ CreateProjekt(project = "000 Dummy", datum = date(),
 \item{path}{Pfad default Dropbox/1_Projekte}
 }
 \description{
-Erstellt ein neues Projekt mir Ordnerstrucktur
- und R-Auswertungs-Files.
+Erstellt ein neues Projekt mit der Ordnerstrucktur
+ und den R-Auswertungs-Files.
 }
 \examples{
 ## Not run:
