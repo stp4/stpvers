@@ -55,7 +55,7 @@ is_empty2 wird in prepare_data genutzt als test ob ein Elemen  leer ist
 
 is_all_logical is_all_0_1 prufen beide Logical aber is_all_dichotom  kann auch ja/nein
 
-isFALSE analog wie if(x){...}
+isFALSE analog wie if(x){...} es bibt aber noch base::isFALSE welches aber leere Werte ignoriert
 
 is_false2 arbeitet mit isFALSE geht aber auch fuer Matris oder Data.frames
 

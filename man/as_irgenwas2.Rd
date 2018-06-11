@@ -17,7 +17,7 @@ Output ist ein Vector bzq dataframe mit gleicgher Laenge wie der Input.
 Prueft ob objekt bestimmte Eigenschaften aufweist.
 Fuer Dataframe gibt es \code{is_all_identical2()}
 
-as_numeric Kopie von Hmisc all.is.numeric kann aber auch Data.Frames verarbeiten
+as_numeric fuer factor und string-objekte
 }
 \examples{
 data<- data.frame(a=1:10,
@@ -32,4 +32,9 @@ as_numeric(data$c)+1
 as_numeric(data$d)+1
 as_numeric(data)
 
+x<- c("0", "-3",  " 5", " 5.6", "   3,5  ", "super")
+character_to_numeric(factor(x))
+
+x<- c("0", "-3",  " 5", " 5.6", "   3,5  ")
+character_to_numeric(x)
 }
