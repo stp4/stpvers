@@ -5,10 +5,14 @@
 \alias{as_numeric}
 \title{as_Familie}
 \usage{
-as_numeric(x)
+as_numeric(x, na.strings = NULL, type = guess_type(x))
 }
 \arguments{
 \item{x}{zu pruefendes Objekt}
+
+\item{na.strings}{Fehlende Werte}
+
+\item{type}{factor, numeric, time}
 }
 \value{
 Output ist ein Vector bzq dataframe mit gleicgher Laenge wie der Input.
@@ -32,9 +36,25 @@ as_numeric(data$c)+1
 as_numeric(data$d)+1
 as_numeric(data)
 
+
+#' 
+x <- c("0", "-3",  " 5", " 5.6", "   3,5  ", "super")
+as_numeric(factor(x))
+as_numeric(x)
+x <- c("0", "-3",  " 5", " 5.6", "   3,5  ")
+
+as_numeric(factor(x))
+as_numeric(x)
+
+
+as_numeric(c("20:00:23", "56:14:47", "99:99:99", "00:00:00"), na.strings =
+             "99:99:99")
+
 x<- c("0", "-3",  " 5", " 5.6", "   3,5  ", "super")
-character_to_numeric(factor(x))
+##character_to_numeric(factor(x))
 
 x<- c("0", "-3",  " 5", " 5.6", "   3,5  ")
-character_to_numeric(x)
+##character_to_numeric(x)
+
+
 }

@@ -98,14 +98,14 @@ is_all_0_1 <- function(x)  {
 
  
 #' @rdname is_irgendwas
-#' @description isFALSE analog wie if(x){...} es bibt aber noch base::isFALSE welches aber leere Werte ignoriert 
+#' @description isFALSE analog wie if(x){...} es gibt aber noch base::isFALSE welches leere Werte ignoriert 
 isFALSE <- function(x){identical(FALSE, x )}
 
 
 #' @rdname is_irgendwas
 #' @description is_false2 arbeitet mit isFALSE geht aber auch fuer Matris oder Data.frames
 #' @export
-is_false2<- function(x) sapply(x, isFALSE)
+is_false2<- function(x) sapply(x, identical(FALSE, x ))
 
 
  
