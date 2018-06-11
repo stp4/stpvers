@@ -98,8 +98,7 @@ is_all_0_1 <- function(x)  {
 
  
 #' @rdname is_irgendwas
-#' @description isFALSE analog wie if(x){...}
-#' @export
+#' @description isFALSE analog wie if(x){...} es bibt aber noch base::isFALSE welches aber leere Werte ignoriert 
 isFALSE <- function(x){identical(FALSE, x )}
 
 
