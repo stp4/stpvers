@@ -31,7 +31,7 @@ stp25_attach <- function() {
 }
 
 
-
+#' @importFrom rstudioapi isAvailable getVersion
 platform_info <- function() {
   if (rstudioapi::isAvailable()) {
     ver <- rstudioapi::getVersion()

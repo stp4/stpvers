@@ -1,15 +1,23 @@
 Package: stpvers
-Type: Package
 Title: Laden der Funktionen von Statistik-Peter
-Version: 0.2.0
-Date: 2018-02-02
-Author: Wolfgang Peter
-Maintainer: Wolfgang Peter <w.peter@statistik-peter.at>
-Description: Ladet der librarys stp4.
+Description: Ladet der librarys stp25. Collection of convenient functions for common statistical computations.
+Authors@R: person("Wolfgang", "Peter", email = "w.peter@statistik-peter.at",  role = c("aut", "cre"))
+Type: Package
+Version: 0.2.1
+Date: 2018-10-08
 License: GPL-3
 Encoding: UTF-8
-Imports: Hmisc
+Imports: 
+  lubridate, 
+  rstudioapi, 
+  stp25aggregate, 
+  stringr
 LazyData: true
-RoxygenNote: 6.0.1
-Suggests: knitr,rmarkdown
+RoxygenNote: 6.1.0
+Suggests: 
+  knitr, 
+  rmarkdown, 
+  testthat,
+  tidyr, 
+  dplyr
 VignetteBuilder: knitr

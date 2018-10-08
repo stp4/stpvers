@@ -48,10 +48,13 @@ NULL
 #' ##character_to_numeric(x)
 #' 
 #' 
+#' @importFrom stp25aggregate dapply2
+#' @importFrom stringr str_count
+#' @importFrom lubridate hms
 as_numeric <- function(x,
                        na.strings = NULL,
                        type = guess_type(x)) {
-  print(type)
+ # print(type)
   #-- library(Hmisc )
   if (type == "factor") {
     levels(x) <- clean_space(levels(x))
