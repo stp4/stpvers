@@ -9,8 +9,7 @@ License: GPL-3
 Encoding: UTF-8
 Imports: 
   lubridate, 
-  rstudioapi, 
-  stp25aggregate, 
+  rstudioapi,
   stringr
 LazyData: true
 RoxygenNote: 6.1.0

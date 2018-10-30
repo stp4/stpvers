@@ -126,8 +126,12 @@ CreateProjekt <-function(project = "000 Dummy",
  #---------------------------------------------------------------------------------
 
 
-  cat( "#-- Eigene Functionen", file = "R/miscFun.r")
-  cat( paste(project, datum, path, comment, sep="\n"),
+  cat( "#-- Eigene Funktionen", file = "R/miscFun.r")
+  
+  cat(paste(project, datum, path, comment, sep="\n"), file = "README.txt")
+ 
+  
+  cat("",
        file = paste0(project, "(1).docx"))
 
 
@@ -327,5 +331,6 @@ folder <- function(..., folder.name = NULL) {
         }
     }
 }
+
 
 
