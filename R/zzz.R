@@ -4,7 +4,6 @@
     return()
 
   stp25_attach()
- # tidyverse_conflicts()
 }
 
 

@@ -55,9 +55,9 @@ KNr       = NA
 
 Name<- gsub("[^A-Za-z0-9 ()]", "", Name)
 FunktionsTest<-FALSE
-##devtools::install_github("jennybc/googlesheets")
-##install.packages("XML")
-##devtools::install_github("hadley/xml2")
+##  devtools::install_github("jennybc/googlesheets")
+##  install.packages("XML")
+##  devtools::install_github("hadley/xml2")
 library(stpvers)
 library(googlesheets)
 library(dplyr)

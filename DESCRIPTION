@@ -1,6 +1,6 @@
 Package: stpvers
 Title: Laden der Funktionen von Statistik-Peter
-Description: Ladet der librarys stp25. Collection of convenient functions for common statistical computations.
+Description: Ladet der librarys stp. Collection of convenient functions for common statistical computations.
 Authors@R: person("Wolfgang", "Peter", email = "w.peter@statistik-peter.at",  role = c("aut", "cre"))
 Type: Package
 Version: 0.2.1
@@ -12,7 +12,7 @@ Imports:
   rstudioapi,
   stringr
 LazyData: true
-RoxygenNote: 6.1.0
+RoxygenNote: 6.1.1
 Suggests: 
   knitr, 
   rmarkdown, 

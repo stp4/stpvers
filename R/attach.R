@@ -1,5 +1,6 @@
 core <- c("stp25output",
-          "stp25APA2",
+         # "stp25APA2",
+          "stp25stat",
           "stp25aggregate",
           "stp25plot",
           "stp25data")
@@ -8,18 +9,7 @@ stp25_attach <- function() {
   versions <-
     vapply(core, function(x)
       as.character(utils::packageVersion(x)), character(1))
-  packages <- paste0("+ ", format(core), " ", format(versions))
 
-  # info <- platform_info()
-  # info <-
-  #   paste0(format(paste0(names(info)), justify = "right"), ": ", info)
-  #
-  # n <- max(length(packages), length(info))
-  # info <- c(info, rep("", n - length(info)))
-  #
-  # info <- paste0(packages, "      ", info, collapse = "\n")
-  #
-  # startup_message(info)
   suppressPackageStartupMessages(lapply(
     core,
     library,

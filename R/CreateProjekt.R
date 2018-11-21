@@ -42,9 +42,9 @@
 #' 
 #' Name<- gsub("[^A-Za-z0-9 ()]", "", Name)
 #' FunktionsTest<-FALSE
-#' ##devtools::install_github("jennybc/googlesheets")
-#' ##install.packages("XML")
-#' ##devtools::install_github("hadley/xml2")
+#' ##  devtools::install_github("jennybc/googlesheets")
+#' ##  install.packages("XML")
+#' ##  devtools::install_github("hadley/xml2")
 #' library(stpvers)
 #' library(googlesheets)
 #' library(dplyr)
@@ -109,7 +109,7 @@ CreateProjekt <-function(project = "000 Dummy",
   t1 <- format(day_time, "%H:%M")
   t2<-  format(day_time+17*60, "%H:%M")
   
-  Rdata<- paste0(gsub("[^[:alpha:]]", "", Clean_Umlaute2(project)), ".Rdata")
+  Rdata<- paste0(gsub("[^[:alpha:]]", "", cleansing_umlaute(project)), ".Rdata")
 
   if(file.exists(paste0(path, "/", project))){
     cat(paste0("\"", paste0(path, "/", project), "\" already exists:\nDo you want to overwrite?\n\n"))
