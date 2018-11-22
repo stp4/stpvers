@@ -1,4 +1,4 @@
-#================================
+#======================================================
 Name      = "Hans Dampf (P)"  # M Medizin Z Zahnmedizin
 # Dr Artzt #v Veterinär
 # B BWL  P Psychologie PH Pädagogische Hochschule OÖ
@@ -11,28 +11,24 @@ Aufwand	  = "2-5 Stunden"
 Thema	    = "Vergleich bzgl Entwicklungswissens"
 
 Kommentar = " "
-#================================
+#=====================================================
 #  75  Student
 #  80  Doktorand berufsbegleitend
 #  90  Klinik
 # 125  Firmen
 Stundensatz = 75
 Datum =  format(Sys.time(), "%d.%m.%Y")
-Zeit =format(Sys.time(), "%H:%M")
+Zeit = format(Sys.time(), "%H:%M")
 Folder  = "C:/Users/wpete/Dropbox/1_Projekte"
-KNr       = NA
+#=====================================================
 
-
-
-
-
-
-Name<- gsub("[^A-Za-z0-9 ()]", "", Name)
-FunktionsTest<-FALSE
+KNr      <- NA
+Name <- gsub("[^A-Za-z0-9 ()]", "", Name)
+FunktionsTest <- FALSE
 ##devtools::install_github("jennybc/googlesheets")
 ##install.packages("XML")
 ##devtools::install_github("hadley/xml2")
-library(stpvers)
+#library(stpvers)
 library(googlesheets)
 library(dplyr)
 
@@ -75,7 +71,7 @@ try(myCopy %>%  gs_edit_cells(ws = "Stammdaten",
 if(!FunktionsTest){
 #-- Create Project ---------------------------------------------
 setwd(Folder)
-CreateProjekt( project = neuer_Kunde,
+  stpvers::CreateProjekt( project = neuer_Kunde,
                datum = Datum,
                comment = Kommentar,
                path = Folder)

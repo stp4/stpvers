@@ -6,8 +6,8 @@
 #' Funktion entfernt stoerende Umlaute, unten stehende Liste ggf. erweitern 
 #' sprintf("%X", as.integer(charToRaw("Ae")))
 #' @param x string
-#' @export
 #' 
+#' @noRd
 cleansing_umlaute <- function(x){
   x <- gsub("\u00e4","ae", x)
   x <- gsub("\u00fc","ue", x)
