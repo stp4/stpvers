@@ -3,8 +3,8 @@ Title: Laden der Funktionen von Statistik-Peter
 Description: Ladet der librarys stp. Collection of convenient functions for common statistical computations.
 Authors@R: person("Wolfgang", "Peter", email = "w.peter@statistik-peter.at",  role = c("aut", "cre"))
 Type: Package
-Version: 0.2.2
-Date: 2018-11-22
+Version: 0.3.0
+Date: 2019-03-27
 License: GPL-3
 Encoding: UTF-8
 Imports: 
