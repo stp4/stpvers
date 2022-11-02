@@ -1,6 +1,11 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+
+
+This is a purely experimental collection of functions and will no longer be updated!
+
+
 # stpvers
 
 Die stpvers ist eine Kopie von tidyverse und ladet die library stpAPA2,
